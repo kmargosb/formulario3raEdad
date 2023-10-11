@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 3era Edad</title>
+</head>
+
+<body>
+    <h1>Formulario</h1>
+    <hr>
+    <br><br>
+
+    <h2>Perfil:</h2>
+    <form>
+        <label for="nombre">Nombre</label>
+        <input type="text">
+        <br><br>
+
+        <label for="apellido">Apellido</label>
+        <input type="text">
+        <br><br>
+
+        <label for="edad">Edad</label>
+        <input type="number">
+        <br>
+
+        <p>Sexo</p>
+        <label for="male">Masculino</label>
+        <input type="radio" id="male" name="sexo">
+        <br>
+
+        <label for="female">Femenino</label>
+        <input type="radio" id="female" name="sexo">
+        <br><br>
+
+        <label for="viejuner">Me siento vienjuner</label>
+        <input type="checkbox">
+        <br><br>
+
+        <label for="escribe">Escribe algo sobre ti</label>
+        <br>
+
+        <textarea name="escribe" id="escribe" cols="30" rows="10"></textarea>
+        <br><br>
+
+        <h2>Tus circunstancias:</h2>
+        <br>
+
+        <label for="email">Correo electronico</label>
+        <input type="email" name="email">
+        <br><br>
+
+        <label for="telefono">Telefono</label>
+        <input type="phone" name="telefono">
+        <br><br>
+
+        <h2>Campos del formulario "Robo de bicicleta"</h2>
+        <br>
+
+        <label for="dia">Fecha</label>
+        <input type="date" name="dia" id="dia">
+        <br><br>
+
+        <label for="hora">Hora</label>
+        <input type="time" name="hora" id="hora">
+        <br><br>
+
+        <label for="color">Color de la Bicicleta</label>
+        <input type="color" name="color" id="color">
+        <br><br>
+
+        <label for="precio">Rango de precio(de 0 a 10000)</label>
+        <input type="range" name="precio" id="precio" min="0" max="10000">
+        <br><br>
+
+        <label for="tipo">Selecciona el tipo de bicicleta</label>
+        <br>
+        <select name="tipo" id="tipo">
+            <optgroup label="Paseo">
+                <option value="señorial">Señorial</option>
+                <option value="anti-plebeyos">Anti-plebeyos</option>
+                <option value="porEncimaDelHombro">Por encima del hombro</option>
+            </optgroup>
+            <optgroup label="Montaña">
+                <option value="gamusinos">Gamusinos</option>
+                <option value="huelefloresPremium">Hueleflores Premium</option>
+                <option value="fangoLover">Fango lover</option>
+            </optgroup>
+            <optgroup label="Carreras">
+                <option value="metroYMedio">Metro y Medio</option>
+                <option value="3 de la tarde">3 de la tarde</option>
+                <option value="grupitors">Grupitors</option>
+            </optgroup>
+        </select>
+
+        <p>Accesorios:</p>
+        <label for="ruedines">Ruedines</label>
+        <input type="checkbox" id="ruedines" name="ruedines">
+        <br>
+        <label for="pegatinas">Pegatinas</label>
+        <input type="checkbox" id="pegatinas" name="pegatinas">
+        <br>
+        <label for="cestita">Cestita</label>
+        <input type="checkbox" id="cestita" name="cestita">
+        <br>
+        <label for="bombaDeAire">Bomba de aire</label>
+        <input type="checkbox" id="bombaDeAire" name="bombaDeAire">
+        <br>
+        <label for="timbre">Timbre</label>
+        <input type="checkbox" id="timbre" name="timbre">
+        <br>
+        <label for="foco">Foco</label>
+        <input type="checkbox" id="foco" name="foco">
+        <br><br>
+
+        <label for="marca">Que marca era?</label>
+        <br>
+        <select name="marca" id="marca">
+            <option value="specialized">Specialized</option>
+            <option value="trek">Trek</option>
+            <option value="merida">Merida</option>
+            <option value="scott">Scott</option>
+            <option value="giant">Giant</option>
+            <option value="cube">Cube</option>
+        </select>
+
+
+
+
+
+
+    </form>
+
+    <br><br><br><br>
+
+
+
+
+</body>
+
+</html>
