@@ -8,130 +8,151 @@
 </head>
 
 <body>
-    <h1>Formulario</h1>
+    <div class="titlePage">
+        <h1>Formularios</h1>
+    </div>
     <hr>
     <br><br>
+    <div class="titleForm1">
+        <h2>Perfil:</h2>
+    </div>
+    <section class="form1">
+        <form>
+            <div class="typeText">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre">
+                <br><br>
 
-    <h2>Perfil:</h2>
-    <form>
-        <label for="nombre">Nombre</label>
-        <input type="text">
-        <br><br>
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido">
+                <br><br>
 
-        <label for="apellido">Apellido</label>
-        <input type="text">
-        <br><br>
+                <label for="edad">Edad</label>
+                <input type="number" id="edad">
+                <br>
+            </div>
 
-        <label for="edad">Edad</label>
-        <input type="number">
-        <br>
+            <div class="typeRadio">
+                <p>Sexo:</p>
+                <label for="male">Masculino</label>
+                <input type="radio" id="male" name="sexo">
+                <br>
 
-        <p>Sexo</p>
-        <label for="male">Masculino</label>
-        <input type="radio" id="male" name="sexo">
-        <br>
+                <label for="female">Femenino</label>
+                <input type="radio" id="female" name="sexo">
+                <br><br>
+            </div>
 
-        <label for="female">Femenino</label>
-        <input type="radio" id="female" name="sexo">
-        <br><br>
+            <div class="typeCheckbox">
+                <label for="viejuner">Me siento vienjuner</label>
+                <input type="checkbox" id="viejuner">
+            </div>
+            <br>
 
-        <label for="viejuner">Me siento vienjuner</label>
-        <input type="checkbox">
-        <br><br>
+            <div class="textArea">
+                <label for="escribe">Escribe algo sobre ti</label>
+                <br>
 
-        <label for="escribe">Escribe algo sobre ti</label>
-        <br>
+                <textarea name="escribe" id="escribe" cols="30" rows="10"></textarea>
+                <br><br>
+            </div>
 
-        <textarea name="escribe" id="escribe" cols="30" rows="10"></textarea>
-        <br><br>
+            <div class="emailPhone">
+                <p>Tus circunstancias:</p>
 
-        <h2>Tus circunstancias:</h2>
-        <br>
+                <label for="email">Correo electronico</label>
+                <input type="email" name="email" id="email">
+                <br><br>
 
-        <label for="email">Correo electronico</label>
-        <input type="email" name="email">
-        <br><br>
+                <label for="telefono">Telefono</label>
+                <input type="phone" name="telefono" id="telefono">
+                <br><br>
+            </div>
+        </form>
+    </section>
 
-        <label for="telefono">Telefono</label>
-        <input type="phone" name="telefono">
-        <br><br>
-
+    <div class="titleForm2">
         <h2>Campos del formulario "Robo de bicicleta"</h2>
-        <br>
+    </div>
+    <br>
 
-        <label for="dia">Fecha</label>
-        <input type="date" name="dia" id="dia">
-        <br><br>
+    <section class="form2">
+        <form>
+            <div class="dataBasic">
+                <label for="dia">Fecha</label>
+                <input type="date" name="dia" id="dia">
+                <br><br>
 
-        <label for="hora">Hora</label>
-        <input type="time" name="hora" id="hora">
-        <br><br>
+                <label for="hora">Hora</label>
+                <input type="time" name="hora" id="hora">
+                <br><br>
 
-        <label for="color">Color de la Bicicleta</label>
-        <input type="color" name="color" id="color">
-        <br><br>
+                <label for="color">Color de la Bicicleta</label>
+                <input type="color" name="color" id="color">
+                <br><br>
 
-        <label for="precio">Rango de precio(de 0 a 10000)</label>
-        <input type="range" name="precio" id="precio" min="0" max="10000">
-        <br><br>
+                <label for="precio">Rango de precio(de 0 a 10000)</label>
+                <input type="range" name="precio" id="precio" min="0" max="10000">
+                <br><br>
+            </div>
 
-        <label for="tipo">Selecciona el tipo de bicicleta</label>
-        <br>
-        <select name="tipo" id="tipo">
-            <optgroup label="Paseo">
-                <option value="señorial">Señorial</option>
-                <option value="anti-plebeyos">Anti-plebeyos</option>
-                <option value="porEncimaDelHombro">Por encima del hombro</option>
-            </optgroup>
-            <optgroup label="Montaña">
-                <option value="gamusinos">Gamusinos</option>
-                <option value="huelefloresPremium">Hueleflores Premium</option>
-                <option value="fangoLover">Fango lover</option>
-            </optgroup>
-            <optgroup label="Carreras">
-                <option value="metroYMedio">Metro y Medio</option>
-                <option value="3 de la tarde">3 de la tarde</option>
-                <option value="grupitors">Grupitors</option>
-            </optgroup>
-        </select>
+            <div class="selectTipo">
+                <label for="tipo">Selecciona el tipo de bicicleta</label>
+                <br>
+                <select name="tipo" id="tipo">
+                    <optgroup label="Paseo">
+                        <option value="señorial">Señorial</option>
+                        <option value="anti-plebeyos">Anti-plebeyos</option>
+                        <option value="porEncimaDelHombro">Por encima del hombro</option>
+                    </optgroup>
+                    <optgroup label="Montaña">
+                        <option value="gamusinos">Gamusinos</option>
+                        <option value="huelefloresPremium">Hueleflores Premium</option>
+                        <option value="fangoLover">Fango lover</option>
+                    </optgroup>
+                    <optgroup label="Carreras">
+                        <option value="metroYMedio">Metro y Medio</option>
+                        <option value="3 de la tarde">3 de la tarde</option>
+                        <option value="grupitors">Grupitors</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="accsesorios">
+                <p>Accesorios:</p>
+                <label for="ruedines">Ruedines</label>
+                <input type="checkbox" id="ruedines" name="ruedines">
+                <br>
+                <label for="pegatinas">Pegatinas</label>
+                <input type="checkbox" id="pegatinas" name="pegatinas">
+                <br>
+                <label for="cestita">Cestita</label>
+                <input type="checkbox" id="cestita" name="cestita">
+                <br>
+                <label for="bombaDeAire">Bomba de aire</label>
+                <input type="checkbox" id="bombaDeAire" name="bombaDeAire">
+                <br>
+                <label for="timbre">Timbre</label>
+                <input type="checkbox" id="timbre" name="timbre">
+                <br>
+                <label for="foco">Foco</label>
+                <input type="checkbox" id="foco" name="foco">
+            </div>
+            <br><br>
 
-        <p>Accesorios:</p>
-        <label for="ruedines">Ruedines</label>
-        <input type="checkbox" id="ruedines" name="ruedines">
-        <br>
-        <label for="pegatinas">Pegatinas</label>
-        <input type="checkbox" id="pegatinas" name="pegatinas">
-        <br>
-        <label for="cestita">Cestita</label>
-        <input type="checkbox" id="cestita" name="cestita">
-        <br>
-        <label for="bombaDeAire">Bomba de aire</label>
-        <input type="checkbox" id="bombaDeAire" name="bombaDeAire">
-        <br>
-        <label for="timbre">Timbre</label>
-        <input type="checkbox" id="timbre" name="timbre">
-        <br>
-        <label for="foco">Foco</label>
-        <input type="checkbox" id="foco" name="foco">
-        <br><br>
-
-        <label for="marca">Que marca era?</label>
-        <br>
-        <select name="marca" id="marca">
-            <option value="specialized">Specialized</option>
-            <option value="trek">Trek</option>
-            <option value="merida">Merida</option>
-            <option value="scott">Scott</option>
-            <option value="giant">Giant</option>
-            <option value="cube">Cube</option>
-        </select>
-
-
-
-
-
-
-    </form>
+            <div class="marca">
+                <label for="marca">Que marca era?</label>
+                <br>
+                <select name="marca" id="marca">
+                    <option value="specialized">Specialized</option>
+                    <option value="trek">Trek</option>
+                    <option value="merida">Merida</option>
+                    <option value="scott">Scott</option>
+                    <option value="giant">Giant</option>
+                    <option value="cube">Cube</option>
+                </select>
+            </div>
+        </form>
+    </section>
 
     <br><br><br><br>
 
